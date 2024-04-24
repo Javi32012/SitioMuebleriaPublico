@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mi Carrito</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/carrito.css'>
+
+</head>
+
+<body>
+    <h1 class="titulo">MI CARRITO</h1>
+    <input type="text" id="inputBuscar" placeholder="Buscar Productos">
+    <table class="tablaCarrito" id="tablaCarrito" border="1">
+    </table>
+    <div id="Productos" class="Productos">
+        <div class="producto">
+            <div class="contendorImg">
+                <img src="../img/CajoneraBlanca.jpg" alt="Cajonera Blanca">
+                <p>Cajonera</p>
+                <p>$1400</p>
+                <button onclick="agregarAlCarrito('Cajonera Blanca',1400,1,'../img/CajoneraBlanca.jpg',1);">Agregar Al Carrito</button>
+            </div>  
+        </div>
+    </div>
+    <script src='../JS/carrito.js'></script>
+    <script src="../JS/enviando.js"></script>
+</body>
+
+</html>

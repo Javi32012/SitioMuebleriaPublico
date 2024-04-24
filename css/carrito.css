@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+}
+
+.titulo {
+    width: 90%;
+    height: 20%;
+    background-color: aqua;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.tablaCarrito {
+    border: 2px double;
+    width: 90%;
+    margin: 5%;
+}
+
+.contendorImg {
+    height: 160px;
+    width: 90px;
+}
+
+.contendorImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgProducto {
+    height: 160px;
+    width: 90px;
+}
+
+.imgProducto img {
+    height: 100%;
+    width: 100%;
+}
+
+.tr1 {
+    text-align: center;
+}
+
+.tr2 {
+    text-align: center;
+}
+
+.td1 {
+    width: 25%;
+}
+
+.td2 {
+    width: 25%;
+}
+
+.td3 {
+    width: 25%;
+}
+
+.td4 {
+    width: 25%;
+}
+
+.td5 {
+    width: 25%;
+}
+
+.td6 {
+    width: 25%;
+}
+
+.td7 {
+    width: 25%;
+}
