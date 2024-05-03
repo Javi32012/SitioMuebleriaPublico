@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+.titulo {
+    background-color: yellow;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 5%;
+    text-align: center;
+}
+
+table {
+    margin: 10;
+    padding: auto;
+}
+
+.divUno {
+    background-color: aliceblue;
+    color: black;
+    width: 150px;
+    height: auto;
+    text-align: center;
+}
+
+.imagenUno {
+    width: 45;
+    height: 80px;
+    text-align: center;
+    margin: 1em;
+}
+
+.imagenUno input {
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cajonGrande {
+    width: 199.125;
+    height: 358.875px;
+    margin-left: 25;
+    overflow: hidden;
+}
+
+.cajonGrande img {
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#cajonPrecioSigno {
+    font-size: 26px;
+    width: 30px;
+    height: 25px;
+}
+
+#cajonPrecioCantidad {
+    font-size: 28;
+    width: 80px;
+    height: 25px;
+}
+
+#cajonPrecio div {
+    text-align: center;
+    margin: 1;
+    float: left;
+}
+
+#cajonDescripcionProducto {
+    font-size: 28;
+}
+
+#cajonDescripcion {
+    height: 600;
+    width: 600;
+    background-color: azure;
+}
+
+#cajonStock {
+    font-size: 22;
+}
+
+.estiloBotones input {
+    color: black;
+    background-color: aqua;
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.cajonSeleccionDeColor {
+    background-color: bisque;
+    height: 80;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.boton {
+    padding: 1px;
+    margin: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    /* Transición de opacidad para suavizar cambios */
+}
+
+.boton-seleccionado {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.boton-no-seleccionado {
+    opacity: 0.5;
+}
+
+#cantidad {
+    font-size: 22;
+}
+
+.carrito {
+    font-size: 20;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    margin-left: 275;
+    cursor: pointer;
+}
+
+.carrito img {
+    width: 100%;
+    height: 100%;
+}
+
+#boton1 {
+    opacity: 0.1;
+    cursor: auto;
+}
+
+.cajonCantidad {
+    align-content: center;
+}
+
+.botonMenos {
+    opacity: 1;
+}
+
+.cantidad {
+    display: inline-block;
+    width: 90%;
+    background-color: aqua;
+    text-align: center;
+}
+
+.botonMas {
+    margin-left: 0;
+    display: inline-block;
+    width: 5%;
+}
+
+.boton-inabilitar {
+    opacity: 0.1;
+}

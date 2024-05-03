@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ropero Corredizo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../css/tocadorCorredizo.css'>
+</head>
+
+<body>
+    <h1 id="titulo" class="titulo">
+        Tocador Corredizo Tipo Hollywod
+    </h1>
+    <table>
+        <tr>
+            <td>
+                <div class="imagenUno">
+                    <input type="image" src="../../../img/ImgTocadoresTC/tcbcjsv1.jpg" onmouseover="fun_imagenUno();">
+                </div>
+            </td>
+            <td rowspan="4">
+                <div class="cajonGrande" id="cajonImagen">
+                    <img src="../../../img/ImgTocadoresTC/tcbcjsv1.jpg" alt="imagen no disponible" id="imagenGlobal">
+                </div>
+            </td>
+            <td rowspan="4">
+                <div id="cajonDescripcion">
+                    <div id="cajonPrecio">
+                        <div id="cajonPrecioSigno">
+                            $
+                        </div>
+                        <div id="cajonPrecioCantidad">
+                            3200
+                        </div>
+                    </div>
+                    <br>
+                    <div id="cajonDescripcionProducto">
+                        ropero Corredizo estilo Holiwoo con 5 cajones y dos tubos para ropa
+                    </div>
+                    <br>
+                    <div id="cajonStock">
+                        Stock disponible
+                    </div>
+                    <br>
+                    <br>
+                    <div id="nombreCantidadCantidad">
+                        Selecciona la cantidad de productos:
+                    </div>
+                    <div class="cajonCantidad">
+                        <label for="nombreCantidadCantidad">
+                            <button id="botonMenos" class="boton-inabilitar" onclick="funcionMenos()" ;>
+                                -
+                            </button>
+                            <div id="cantidad" class="cantidad">
+                                1
+                            </div>
+                            <button id="botonMas" class="botonMas" onclick="funcionMas();">
+                                +
+                            </button>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="cajonSeleccionDeColor">
+                        <br> Selecciona tu color favorito
+                        <div>
+                            <table style="padding-left:13px;">
+                                <tr>
+                                    <td>
+                                        <input type="button" value="Blanco" id="boton1" class="boton"
+                                            style="background-color: white;">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="Negro" id="boton2" class="boton"
+                                            onclick="seleccionarBoton('boton2');"
+                                            style="background-color: black; color: white;">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="Rosa" id="boton3" class="boton"
+                                            onclick="seleccionarBoton('../tocadorVertical/tocadorVerticalRosa/index.html','boton3');"
+                                            style="background-color:pink;">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="Fiusha" id="boton4" class="boton"
+                                            onclick="seleccionarBoton('boton4');" style="background-color: fuchsia;">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="Gris Madera" id="boton5" class="boton"
+                                            onclick="seleccionarBoton('Gris/index.html','boton5');"
+                                            style="background-color:gray;">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="Rojo Oxido madera" id="boton6" class="boton"
+                                            onclick="seleccionarBoton('boton6');" style="background-color:brown;">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="Rojo Encendido" id="boton7" class="boton"
+                                            onclick="seleccionarBoton('boton7');" style="background-color:red;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div id="botones" class="estiloBotones">
+                        <div id="BotonComprar">
+                            <input type="button" value="Comprar" onclick="fun_comprar()">
+                        </div>
+                        <br>
+                        <div id="BotonAgrgar">
+                            <input type="button" value="Agregar al carrito" onclick="fun_agreCarriro()">
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="carrito">
+                    <button onclick="fun_carrito();"><!--
+                    <img src="Fotos/carrito.jpg" alt="imagen del carrito de compras" onclick="fun_carrito(); ">-->
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-shopping-cart-filled" width="44" height="44"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M6 2a1 1 0 0 1 .993 .883l.007 .117v1.068l13.071 .935a1 1 0 0 1 .929 1.024l-.01 .114l-1 7a1 1 0 0 1 -.877 .853l-.113 .006h-12v2h10a3 3 0 1 1 -2.995 3.176l-.005 -.176l.005 -.176c.017 -.288 .074 -.564 .166 -.824h-5.342a3 3 0 1 1 -5.824 1.176l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-12.17h-1a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 .883 -.993l.117 -.007h2zm0 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2zm11 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2z"
+                                stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="imagenUno">
+                    <input type="image" src="../../../img/ImgTocadoresTC/tcbcjsv2.jpg" onmouseover="fun_imagenDos();">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="imagenUno">
+                    <input type="image" src="../../../img/ImgTocadoresTC/tcbcjsv3.jpg" onmouseover="fun_imagenTres();">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="imagenUno">
+                    <input type="image" src="../../../img/ImgTocadoresTC/tcbcjsv4.jpg" onmouseover="fun_imagenCinco();">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="imagenUno">
+                    <input type="image" src="../../../img/ImgTocadoresTC/tcbcjsv2.jpg" onmouseover="fun_imagenSeis();">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src='../../../js/tocadorCorredizo.js'></script>
+</body>
+
+</html>
