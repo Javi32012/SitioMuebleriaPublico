@@ -330,3 +330,7 @@ h3 {
     border-radius: 50%;
 
 }
+.sinEstilo{
+    text-decoration: none;
+    color: black;
+}
