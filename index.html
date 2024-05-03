@@ -7,9 +7,7 @@
     <title>Distribuidora de muebles</title>
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/main.css" as="style">
-    <link href="css/main.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/mainIndex.css'>
 </head>
 
 <body>
@@ -19,8 +17,8 @@
     <div class="nav-bg">
         <nav class="panel_navegacion contenedor">
             <a href="Favoritos.html">Favoritos</a>
-            <a href="#">Registrate</a>
-            <a href="#">Ingresar</a>
+            <a href="Registro/registro.html">Registrate</a>
+            <a href="Ingresar/ingresar.html">Ingresar</a>
             <a href="Carrito/index.html">Mi Carrito</a>
         </nav>
     </div>
@@ -48,27 +46,19 @@
             <table class="tabla">
                 <tr>
                     <td>
-                        <a href="Menu/Tocadores/index.html">
-                            <section class="mueble">
-                                <h3>
-                                    Tocadores
-                                </h3>
-                                <div class="iconos zoom">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette"
-                                        width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" />
-                                        <path
-                                            d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
-                                        <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
-                                        <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
-                                        <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
-                                    </svg>
-                                </div>
-                                <p>Toacdores para decorar tu casa</p>
-                            </section>
-                        </a>
-
+                        <div class="botonMenu">
+                            <a href="Menu/Tocadores/index.html">
+                                <section class="mueble">
+                                    <h3>
+                                        Tocadores
+                                    </h3>
+                                    <div class="iconos zoom">
+                                        <img src="img/ico/tocador.ico" alt="ico tocador">
+                                    </div>
+                                    <p>Toacdores para<br>decorar tu casa</p>
+                                </section>
+                            </a>
+                        </div>
                         <section class="mueble">
                             <h3>
                                 Roperos
@@ -169,38 +159,37 @@
             </table>
         </div>
         <section>
-            <h2>Contactanos</h2>
-            <form class="formulario" action="Favoritos.html" method="post" id="formulario">
-                <fieldset>
-                    <legend>Contactanos si quieres alguno en especial</legend>
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <label for="nombre">Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu nombre" id="nombre" name="nombre">
-                        </div>
-
-                        <div class="campo">
-                            <label for="telefono">Telefono</label>
-                            <input class="input-text" type="number" placeholder="telefono" id="telefono"
-                                name="telefono">
-                        </div>
-
-                        <div class="campo">
-                            <label for="correo">Correo</label>
-                            <input class="input-text" type="email" placeholder="correo" id="correo" name="correo">
-                        </div>
-
-                        <div class="campo">
-                            <label for="mensajeTA">Mensaje</label>
-                            <textarea class="input-text" id="mensajeTA" name="mensajeTA"></textarea>
-                        </div>
+        <h2>Contactanos</h2>
+        <form class="formulario" action="Favoritos.html" method="post" id="formulario">
+            <fieldset>
+                <legend>Contactanos si quieres alguno en especial</legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu nombre" id="nombre" name="nombre">
                     </div>
-                    <div class="alinear-derecha flex">
-                        <input class="boton w-sm-100" type="submit" value="enviar">
+
+                    <div class="campo">
+                        <label for="telefono">Telefono</label>
+                        <input class="input-text" type="number" placeholder="telefono" id="telefono" name="telefono">
                     </div>
-                </fieldset>
-            </form>
-        </section>
+
+                    <div class="campo">
+                        <label for="correo">Correo</label>
+                        <input class="input-text" type="email" placeholder="correo" id="correo" name="correo">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensajeTA">Mensaje</label>
+                        <textarea class="input-text" id="mensajeTA" name="mensajeTA"></textarea>
+                    </div>
+                </div>
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
     </main>
     <script src='JS/index.js'></script>
     <footer>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    <form id="loginForm">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+        <div>
+            <button type="submit">Iniciar Sesión</button>
+        </div>
+    </form>
+
+    <script>
+        // Aquí puedes agregar tu script de JavaScript para manejar el inicio de sesión
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+            // Aquí puedes obtener los valores del formulario
+            const email = document.getElementById("email").value;
+            const contrasena = document.getElementById("contrasena").value;
+
+            // Aquí puedes realizar la lógica para autenticar al usuario
+            console.log("Email:", email);
+            console.log("Contraseña:", contrasena);
+
+            // Aquí podrías enviar los datos a un servidor para autenticación
+            // fetch('url_del_servidor', {
+            //     method: 'POST',
+            //     body: JSON.stringify({ email, contrasena }),
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     }
+            // }).then(response => {
+            //     // Manejar la respuesta del servidor
+            // }).catch(error => {
+            //     console.error('Error al enviar los datos:', error);
+            // });
+        });
+    </script>
+</body>
+</html>
