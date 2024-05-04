@@ -46,6 +46,7 @@ table {
 }
 
 .cajonGrande img {
+    cursor: zoom-in;
     text-align: center;
     border-radius: 10px;
     width: 100%;
