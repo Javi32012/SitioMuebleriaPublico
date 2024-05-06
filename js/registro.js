@@ -9,7 +9,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     const telefono = document.getElementById("telefono").value;
     const correo = document.getElementById("correo").value;
     const contrasena = document.getElementById("contrasena").value;
-/*
+
     var ajax = new XMLHttpRequest();
     ajax.addEventListener("load", completo_handler, false);
     ajax.addEventListener("error", error_handler, false);
@@ -23,7 +23,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     paquete.append("telefono", telefono);
     paquete.append("correo", correo);
     paquete.append("contrasena", contrasena);
-    ajax.send(paquete);*/
+    ajax.send(paquete);
 
 
     document.getElementById("nombre").value="";
@@ -32,7 +32,6 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     document.getElementById("telefono").value="";
     document.getElementById("correo").value="";
     document.getElementById("contrasena").value="";
-
     // Aquí podrías enviar los datos a un servidor utilizando fetch o XMLHttpRequest
     // fetch('url_del_servidor', {
     //     method: 'POST',
@@ -45,6 +44,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     // }).catch(error => {
     //     console.error('Error al enviar los datos:', error);
     // });
+    location.href= "SitioMuebleriaPublico/js/p.html";
 });
 function completo_handler(e) {
     document.getElementById("status").innerHTML = e.target.response;
