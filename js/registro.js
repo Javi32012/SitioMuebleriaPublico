@@ -33,6 +33,25 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     paqueteUsuario.append("contrasena", contrasena);
     ajax.send(paqueteUsuario);
 
+
+    ajax.open("POST", "http://localhost/sitioMuebleria/registro.php");  
+
+    var paquete = new FormData();
+    paquete.append("nombre", nombre);
+    paquete.append("appat", appat);
+    paquete.append("apmat", apmat);
+    paquete.append("telefono", telefono);
+    paquete.append("correo", correo);
+    paquete.append("contrasena", contrasena);
+    ajax.send(paquete);
+
+
+    document.getElementById("nombre").value="";
+    document.getElementById("appat").value="";
+    document.getElementById("apmat").value="";
+    document.getElementById("telefono").value="";
+    document.getElementById("correo").value="";
+    document.getElementById("contrasena").value="";
     // Aquí podrías enviar los datos a un servidor utilizando fetch o XMLHttpRequest
     // fetch('url_del_servidor', {
     //     method: 'POST',
@@ -45,6 +64,8 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     // }).catch(error => {
     //     console.error('Error al enviar los datos:', error);
     // });
+    location.href= "SitioMuebleriaPublico/js/p.html";
+
 });
 function completo_handler(e) {
     document.getElementById("status").innerHTML = e.target.response;
