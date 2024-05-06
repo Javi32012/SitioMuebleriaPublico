@@ -9,20 +9,12 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     const telefono = document.getElementById("telefono").value;
     const correo = document.getElementById("correo").value;
     const contrasena = document.getElementById("contrasena").value;
-
-    // Aquí puedes realizar la lógica para enviar los datos a un servidor o almacenarlos localmente
-    console.log("Nombre:", nombre);
-    console.log("Primer Apellido:", appat);
-    console.log("Segindo Apellido:", apmat);
-    console.log("Telefono:", telefono)
-    console.log("Correo:", correo);
-    console.log("Contraseña:", contrasena);
-
+/*
     var ajax = new XMLHttpRequest();
     ajax.addEventListener("load", completo_handler, false);
     ajax.addEventListener("error", error_handler, false);
     ajax.addEventListener("abort", abort_handler, false);
-    ajax.open("POST", "http://localhost/Proyecto/Proyecto/ingrsarDocumentos.php");  
+    ajax.open("POST", "http://localhost/sitioMuebleria/registro.php");  
 
     var paquete = new FormData();
     paquete.append("nombre", nombre);
@@ -31,7 +23,15 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     paquete.append("telefono", telefono);
     paquete.append("correo", correo);
     paquete.append("contrasena", contrasena);
-    ajax.send(paquete);
+    ajax.send(paquete);*/
+
+
+    document.getElementById("nombre").value="";
+    document.getElementById("appat").value="";
+    document.getElementById("apmat").value="";
+    document.getElementById("telefono").value="";
+    document.getElementById("correo").value="";
+    document.getElementById("contrasena").value="";
 
     // Aquí podrías enviar los datos a un servidor utilizando fetch o XMLHttpRequest
     // fetch('url_del_servidor', {
