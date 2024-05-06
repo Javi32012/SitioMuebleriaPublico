@@ -10,31 +10,11 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     const correo = document.getElementById("correo").value;
     const contrasena = document.getElementById("contrasena").value;
 
-    // Aquí puedes realizar la lógica para enviar los datos a un servidor o almacenarlos localmente
-    console.log("Nombre:", nombre);
-    console.log("Primer Apellido:", appat);
-    console.log("Segindo Apellido:", apmat);
-    console.log("Telefono:", telefono)
-    console.log("Email:", correo);
-    console.log("Contraseña:", contrasena);
-
     var ajax = new XMLHttpRequest();
     ajax.addEventListener("load", completo_handler, false);
     ajax.addEventListener("error", error_handler, false);
     ajax.addEventListener("abort", abort_handler, false);
     ajax.open("POST", "http://localhost/sitioMuebleria/registro.php");
-
-    var paqueteUsuario = new FormData();
-    paqueteUsuario.append("nombre", nombre);
-    paqueteUsuario.append("appat", appat);
-    paqueteUsuario.append("apmat", apmat);
-    paqueteUsuario.append("telefono",telefono);
-    paqueteUsuario.append("correo", correo);
-    paqueteUsuario.append("contrasena", contrasena);
-    ajax.send(paqueteUsuario);
-
-
-    ajax.open("POST", "http://localhost/sitioMuebleria/registro.php");  
 
     var paquete = new FormData();
     paquete.append("nombre", nombre);
@@ -64,7 +44,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     // }).catch(error => {
     //     console.error('Error al enviar los datos:', error);
     // });
-    location.href= "SitioMuebleriaPublico/js/p.html";
+    location.href= "../index.html";
 
 });
 function completo_handler(e) {
