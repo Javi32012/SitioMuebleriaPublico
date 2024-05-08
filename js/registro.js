@@ -15,7 +15,6 @@ document.getElementById("registroForm").addEventListener("submit", function(even
     ajax.addEventListener("error", error_handler, false);
     ajax.addEventListener("abort", abort_handler, false);
     ajax.open("POST", "http://localhost/sitioMuebleria/registro.php");
-
     var paquete = new FormData();
     paquete.append("nombre", nombre);
     paquete.append("appat", appat);
